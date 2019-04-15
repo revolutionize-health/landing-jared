@@ -136,12 +136,13 @@ html {
 .navBar {
   background-color: #0066ff;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .navBar nav {
-  display: flex;
   width: 100%;
   padding: 2.5rem;
+  display: flex;
+  justify-content: space-around;
 }
 header {
   display: flex;
@@ -164,10 +165,20 @@ header button {
   margin: 2rem 45% 5rem 45%;
   border: none;
 }
+@media (max-width: 500px) {
+  header button {
+    margin: 2rem 30%;
+  }
+}
 .secondBody {
   color: white;
   background-color: #0066ff;
   display: flex;
+}
+@media (max-width: 500px) {
+  .secondBody {
+    flex-direction: column;
+  }
 }
 .secondBody div {
   padding: 2rem 4rem;
@@ -182,25 +193,42 @@ header button {
 }
 .thirdBody {
   display: flex;
-  /* div {
-        padding:
-    } */
 }
 .thirdBody h2 {
   font-size: 3.5rem;
   padding: 5% 7% 1% 7%;
 }
+@media (max-width: 800px) {
+  .thirdBody h2 {
+    padding: 8% 7% 3% 7%;
+  }
+}
+@media (max-width: 500px) {
+  .thirdBody h2 {
+    padding: 10% 10% 5% 10%;
+  }
+}
 .thirdBody p {
   font-size: 2rem;
   padding: 1% 7% 7% 7%;
 }
+@media (max-width: 500px) {
+  .thirdBody p {
+    padding: 2% 10% 19% 10%;
+  }
+}
+.thirdBody img {
+  width: 20%;
+  height: auto;
+}
 footer {
   background-color: #0066ff;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 0.33% 0%;
 }
 footer a {
   font-size: 1.5rem;
   color: white;
-  padding: 0rem 3%;
+  width: auto;
 }

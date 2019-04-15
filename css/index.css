@@ -146,7 +146,7 @@ html {
 header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 header h1 {
   font-size: 6rem;
@@ -155,14 +155,52 @@ header h1 {
 }
 header p {
   font-size: 2rem;
-  width: 70%;
   padding: 2rem;
   text-align: center;
+  padding: 1rem 5.5rem 2.5rem 5.5rem;
+}
+header button {
+  padding: 1rem;
+  margin: 2rem 45% 5rem 45%;
+  border: none;
 }
 .secondBody {
+  color: white;
   background-color: #0066ff;
+  display: flex;
 }
-.thirdBody img {
-  width: 25%;
-  height: auto;
+.secondBody div {
+  padding: 2rem 4rem;
+}
+.secondBody h2 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.secondBody p {
+  font-size: 1.5rem;
+  padding: 2rem, 0rem, 1rem, 0rem;
+}
+.thirdBody {
+  display: flex;
+  /* div {
+        padding:
+    } */
+}
+.thirdBody h2 {
+  font-size: 3.5rem;
+  padding: 5% 7% 1% 7%;
+}
+.thirdBody p {
+  font-size: 2rem;
+  padding: 1% 7% 7% 7%;
+}
+footer {
+  background-color: #0066ff;
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  font-size: 1.5rem;
+  color: white;
+  padding: 0rem 3%;
 }

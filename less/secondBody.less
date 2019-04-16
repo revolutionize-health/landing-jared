@@ -3,12 +3,16 @@
     background-color: @dr-blue;
     display: flex;
 
+    @media @tablet {
+        flex-direction: column;
+    }
+
     @media @phone {
         flex-direction: column;
     }
 
     div {
-        padding: 2rem 4rem;
+        padding: 3rem 4rem;
     }
 
 

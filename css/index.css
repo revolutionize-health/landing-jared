@@ -128,14 +128,14 @@ table {
 }
 * {
   box-sizing: border-box;
-  font-family: 'Noto Sans', sans-serif;
 }
 html {
   font-size: 62.5%;
+  font-family: 'Noto Sans', sans-serif;
 }
 .navBar {
-  background-color: #0066ff;
-  color: white;
+  background-color: #062a3a;
+  color: #AD8E40;
   font-size: 2rem;
 }
 .navBar nav {
@@ -145,25 +145,35 @@ html {
   justify-content: space-around;
 }
 header {
+  background-image: url("../img/bp-pic-styled.jpg");
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-size: cover;
+  padding: 10% 0;
+  color: white;
 }
 header h1 {
   font-size: 6rem;
   text-align: center;
   padding: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
 }
 header p {
   font-size: 2rem;
   padding: 2rem;
   text-align: center;
   padding: 1rem 5.5rem 2.5rem 5.5rem;
+  width: 40%;
+  margin: 0 auto;
 }
 header button {
-  padding: 1rem;
-  margin: 2rem 45% 5rem 45%;
+  padding: 2rem 7rem;
+  margin: 5rem auto;
   border: none;
+  background-color: #AD8E40;
 }
 @media (max-width: 500px) {
   header button {
@@ -172,7 +182,7 @@ header button {
 }
 .secondBody {
   color: white;
-  background-color: #0066ff;
+  background-color: #062a3a;
   display: flex;
 }
 @media (max-width: 500px) {
@@ -222,7 +232,7 @@ header button {
   height: auto;
 }
 footer {
-  background-color: #0066ff;
+  background-color: #062a3a;
   display: flex;
   justify-content: space-around;
   padding: 0.33% 0%;

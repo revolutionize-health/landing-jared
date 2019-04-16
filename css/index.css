@@ -128,46 +128,67 @@ table {
 }
 * {
   box-sizing: border-box;
-  font-family: 'Noto Sans', sans-serif;
 }
 html {
   font-size: 62.5%;
+  font-family: 'Noto Sans', sans-serif;
 }
 .navBar {
-  background-color: #0066ff;
-  color: white;
-  font-size: 2.5rem;
+  background-color: #062a3a;
+  color: #AD8E40;
+  font-size: 2rem;
 }
 .navBar nav {
-  display: flex;
   width: 100%;
   padding: 2.5rem;
+  display: flex;
+  justify-content: space-around;
 }
 header {
+  background-image: url("../img/bp-pic-styled.jpg");
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-size: cover;
+  padding: 10% 0;
+  color: white;
 }
 header h1 {
   font-size: 6rem;
   text-align: center;
   padding: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
 }
 header p {
   font-size: 2rem;
   padding: 2rem;
   text-align: center;
   padding: 1rem 5.5rem 2.5rem 5.5rem;
+  width: 40%;
+  margin: 0 auto;
 }
 header button {
-  padding: 1rem;
-  margin: 2rem 45% 5rem 45%;
+  padding: 2rem 7rem;
+  margin: 5rem auto;
   border: none;
+  background-color: #AD8E40;
+}
+@media (max-width: 500px) {
+  header button {
+    margin: 2rem 30%;
+  }
 }
 .secondBody {
   color: white;
-  background-color: #0066ff;
+  background-color: #062a3a;
   display: flex;
+}
+@media (max-width: 500px) {
+  .secondBody {
+    flex-direction: column;
+  }
 }
 .secondBody div {
   padding: 2rem 4rem;
@@ -182,25 +203,42 @@ header button {
 }
 .thirdBody {
   display: flex;
-  /* div {
-        padding:
-    } */
 }
 .thirdBody h2 {
   font-size: 3.5rem;
   padding: 5% 7% 1% 7%;
 }
+@media (max-width: 800px) {
+  .thirdBody h2 {
+    padding: 8% 7% 3% 7%;
+  }
+}
+@media (max-width: 500px) {
+  .thirdBody h2 {
+    padding: 10% 10% 5% 10%;
+  }
+}
 .thirdBody p {
   font-size: 2rem;
   padding: 1% 7% 7% 7%;
 }
+@media (max-width: 500px) {
+  .thirdBody p {
+    padding: 2% 10% 19% 10%;
+  }
+}
+.thirdBody img {
+  width: 20%;
+  height: auto;
+}
 footer {
-  background-color: #0066ff;
+  background-color: #062a3a;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 0.33% 0%;
 }
 footer a {
   font-size: 1.5rem;
   color: white;
-  padding: 0rem 3%;
+  width: auto;
 }

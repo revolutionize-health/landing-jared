@@ -144,24 +144,29 @@ html {
   display: flex;
   justify-content: space-around;
 }
-header {
+.indexHeader {
   background-image: url("../img/bp-pic-styled.jpg");
   background-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-size: cover;
-  padding: 10% 0;
+  padding: 12% 0;
   color: white;
 }
-header h1 {
+@media (max-width: 800px) {
+  .indexHeader {
+    background-position: 40% 60%;
+  }
+}
+.indexHeader h1 {
   font-size: 6rem;
   text-align: center;
   padding: 2rem;
   margin-top: 2rem;
   font-weight: bold;
 }
-header p {
+.indexHeader p {
   font-size: 2rem;
   padding: 2rem;
   text-align: center;
@@ -169,15 +174,62 @@ header p {
   width: 40%;
   margin: 0 auto;
 }
-header button {
+@media (max-width: 800px) {
+  .indexHeader p {
+    padding: 1rem 2.5rem 2.5rem 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .indexHeader p {
+    padding: 1rem 0.5rem 2.5rem 0.5rem;
+  }
+}
+.indexHeader button {
   padding: 2rem 7rem;
   margin: 5rem auto;
   border: none;
   background-color: #AD8E40;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1.75rem;
 }
 @media (max-width: 500px) {
-  header button {
-    margin: 2rem 30%;
+  .indexHeader button {
+    margin: 2rem 30% 1rem 30%;
+    padding: 1.7rem 6rem;
+  }
+}
+.aboutUsHeader {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12% 0;
+  color: #062a3a;
+}
+.aboutUsHeader h1 {
+  font-size: 6rem;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.aboutUsHeader p {
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+  padding: 1rem 5.5rem 2.5rem 5.5rem;
+  width: 40%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .aboutUsHeader p {
+    padding: 1rem 2.5rem 2.5rem 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .aboutUsHeader p {
+    padding: 1rem 0.5rem 2.5rem 0.5rem;
   }
 }
 .secondBody {
@@ -185,13 +237,18 @@ header button {
   background-color: #062a3a;
   display: flex;
 }
+@media (max-width: 800px) {
+  .secondBody {
+    flex-direction: column;
+  }
+}
 @media (max-width: 500px) {
   .secondBody {
     flex-direction: column;
   }
 }
 .secondBody div {
-  padding: 2rem 4rem;
+  padding: 3rem 4rem;
 }
 .secondBody h2 {
   font-size: 3rem;
@@ -203,6 +260,11 @@ header button {
 }
 .thirdBody {
   display: flex;
+}
+@media (max-width: 500px) {
+  .thirdBody {
+    flex-direction: column;
+  }
 }
 .thirdBody h2 {
   font-size: 3.5rem;
@@ -222,9 +284,14 @@ header button {
   font-size: 2rem;
   padding: 1% 7% 7% 7%;
 }
+@media (max-width: 800px) {
+  .thirdBody p {
+    padding: 1% 7% 12% 7%;
+  }
+}
 @media (max-width: 500px) {
   .thirdBody p {
-    padding: 2% 10% 19% 10%;
+    padding: 2% 10% 10% 10%;
   }
 }
 .thirdBody img {
@@ -235,10 +302,20 @@ footer {
   background-color: #062a3a;
   display: flex;
   justify-content: space-around;
-  padding: 0.33% 0%;
+  padding: 1% 0%;
+}
+@media (max-width: 800px) {
+  footer {
+    padding: 1.5% 0%;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    padding: 4% 0%;
+  }
 }
 footer a {
-  font-size: 1.5rem;
-  color: white;
+  font-size: 1.75rem;
+  color: #AD8E40;
   width: auto;
 }

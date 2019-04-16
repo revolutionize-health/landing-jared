@@ -144,7 +144,7 @@ html {
   display: flex;
   justify-content: space-around;
 }
-header {
+.indexHeader {
   background-image: url("../img/bp-pic-styled.jpg");
   background-size: 100%;
   display: flex;
@@ -155,18 +155,18 @@ header {
   color: white;
 }
 @media (max-width: 800px) {
-  header {
+  .indexHeader {
     background-position: 40% 60%;
   }
 }
-header h1 {
+.indexHeader h1 {
   font-size: 6rem;
   text-align: center;
   padding: 2rem;
   margin-top: 2rem;
   font-weight: bold;
 }
-header p {
+.indexHeader p {
   font-size: 2rem;
   padding: 2rem;
   text-align: center;
@@ -175,16 +175,16 @@ header p {
   margin: 0 auto;
 }
 @media (max-width: 800px) {
-  header p {
+  .indexHeader p {
     padding: 1rem 2.5rem 2.5rem 2.5rem;
   }
 }
 @media (max-width: 500px) {
-  header p {
+  .indexHeader p {
     padding: 1rem 0.5rem 2.5rem 0.5rem;
   }
 }
-header button {
+.indexHeader button {
   padding: 2rem 7rem;
   margin: 5rem auto;
   border: none;
@@ -194,9 +194,42 @@ header button {
   font-size: 1.75rem;
 }
 @media (max-width: 500px) {
-  header button {
+  .indexHeader button {
     margin: 2rem 30% 1rem 30%;
     padding: 1.7rem 6rem;
+  }
+}
+.aboutUsHeader {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12% 0;
+  color: #062a3a;
+}
+.aboutUsHeader h1 {
+  font-size: 6rem;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.aboutUsHeader p {
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+  padding: 1rem 5.5rem 2.5rem 5.5rem;
+  width: 40%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .aboutUsHeader p {
+    padding: 1rem 2.5rem 2.5rem 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .aboutUsHeader p {
+    padding: 1rem 0.5rem 2.5rem 0.5rem;
   }
 }
 .secondBody {

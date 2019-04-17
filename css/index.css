@@ -165,24 +165,25 @@ html {
   font-size: 3.2rem;
   font-weight: bold;
   padding: 1rem;
-  margin-top: 2rem;
-  /* position: fixed; <-------------uncomment to have stick button*/
+  top: 4rem;
+  position: fixed;
 }
 .menu-holder .menu-content {
-  width: 100%;
-  position: absolute;
+  width: 15rem;
+  position: fixed;
   background-color: #062a3a;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 1.5px; */
-  border: 0.2rem, solid #062a3a;
+  top: 8.5rem;
+  border: 2rem, solid white;
   border-radius: 2%;
+  animation: fadein 0.5s;
 }
 .menu-holder .menu-link {
   width: 100%;
   text-align: left;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
@@ -190,6 +191,14 @@ html {
 }
 .menu-holder .menu-hidden {
   display: none;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .indexHeader {
   background-image: url("../img/bp-pic-styled.jpg");
@@ -236,8 +245,9 @@ html {
   margin: 5rem auto;
   border: none;
   background-color: #AD8E40;
+  color: #062a3a;
   border-radius: 1rem;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 1.75rem;
   cursor: pointer;
 }
@@ -284,6 +294,7 @@ html {
   color: white;
   background-color: #062a3a;
   display: flex;
+  padding: 6rem 0 8rem 0;
 }
 @media (max-width: 800px) {
   .secondBodyIndex {
@@ -302,7 +313,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 0rem;
+  padding: 2.5rem 0rem;
 }
 .secondBodyIndex h2 {
   font-size: 4rem;
@@ -318,7 +329,6 @@ html {
 .secondBodyIndex .fa-book-medical {
   font-size: 5rem;
   text-align: center;
-  padding: 0rem 2rem 2rem 0rem;
 }
 .secondBodyIndex .fa-heartbeat {
   font-size: 5rem;
@@ -361,12 +371,12 @@ html {
   padding: 2rem, 0rem, 1rem, 0rem;
 }
 .secondBodyAboutUs img {
-  width: 30%;
+  width: 10rem;
   height: auto;
   border-radius: 50%;
   position: relative;
-  left: 20%;
-  top: 20%;
+  left: 40%;
+  padding-top: 0%;
 }
 .thirdBodyIndex {
   display: flex;
@@ -460,12 +470,12 @@ html {
   }
 }
 .thirdBodyAboutUs img {
-  width: 19%;
+  width: 10rem;
   height: auto;
   border-radius: 50%;
   position: relative;
-  left: 30%;
-  bottom: 5%;
+  left: 50%;
+  top: 10%;
 }
 footer {
   background-color: #062a3a;
@@ -497,9 +507,10 @@ footer a {
 .carousel-container {
   width: 47rem;
   margin: auto;
-  border: 0.3rem solid #062a3a;
+  border: 1rem solid #062a3a;
   overflow: hidden;
   position: relative;
+  background-position-x: 5rem;
 }
 @media (max-width: 800px) {
   .carousel-container {

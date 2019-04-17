@@ -5,6 +5,7 @@
   left: 5rem;
   width: 7.5%;
   cursor: pointer;
+  
 
   .burger-button {
    
@@ -16,6 +17,7 @@
     padding: 1rem;
     top: 4rem;
     position: fixed; 
+    
   }
   .menu-content {
     width: 15rem;
@@ -27,6 +29,9 @@
     top: 8.5rem;
     border: 2rem, solid white;
     border-radius: 2%;
+    animation: fadein .5s;
+    
+    
   }
   .menu-link {
     width: 100%;
@@ -39,6 +44,12 @@
   }
   .menu-hidden {
     display: none;
+   
 }
 
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

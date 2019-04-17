@@ -178,6 +178,7 @@ html {
   top: 8.5rem;
   border: 2rem, solid white;
   border-radius: 2%;
+  animation: fadein 0.5s;
 }
 .menu-holder .menu-link {
   width: 100%;
@@ -190,6 +191,14 @@ html {
 }
 .menu-holder .menu-hidden {
   display: none;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .indexHeader {
   background-image: url("../img/bp-pic-styled.jpg");

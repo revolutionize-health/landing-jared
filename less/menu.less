@@ -1,0 +1,45 @@
+
+.menu-holder {
+  z-index: 2;
+  position: absolute;
+  left: 5rem;
+  width: 7.5%;
+ 
+  cursor: pointer;
+
+  .burger-button {
+   
+    border: .2rem solid @dr-blue;
+    background-color: @dr-blue;
+    color: @dr-secondary;
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin-top: 2rem;
+    /* position: fixed; <-------------uncomment to have stick button*/
+  }
+  .menu-content {
+    width: 100%;
+    position: absolute;
+    background-color: @dr-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    /* margin-top: 1.5px; */
+    border: .2rem, solid @dr-blue;
+    border-radius: 2%;
+  }
+  .menu-link {
+    width: 100%;
+    text-align: left;
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .menu-hidden {
+    display: none;
+}
+
+}

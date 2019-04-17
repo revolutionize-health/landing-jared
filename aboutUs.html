@@ -9,13 +9,17 @@
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 
 </head>
 
 <body>
     <section class="navBar">
         <nav>
-            <a>About Us</a>
+            <a href="index.html">Home</a>
+            <a href="https://rev-health.netlify.com/login">Login</a>
             <a>Our Mission</a>
         </nav>
     </section>
@@ -23,35 +27,58 @@
     <div class="container">
         <header class="aboutUsHeader">
         
-            <h1>Meet Our Team</h1>
-            <p>Meet the team responsible for revolutionizing healthcare </p>
-            
+            <h1>Our Team</h1>
+            <p>Meet the team responsible for revolutionizing healthcare</p>
+            <div class ="carousel-container">
+                <i class="fas fa-chevron-left" id="prevBtn"></i>
+                <i class="fas fa-chevron-right" id="nextBtn"></i>
+                <div class="carousel-frame">
+                    <img src="img/Jonathan-David.png" id="lastPic2">
+                    <img src="img/Lola-Heffernan.png">
+                    <img src="img/Brandon-Allison.png">
+                    <img src="img/Jacob-Angulo.png">
+                    <img src="img/Jared-Parrish.png">
+                    <img src="img/Jonathan-David.png">
+                    <img src="img/Lola-Heffernan.png" id="firstPic2">
+                </div>
+                
+            </div>
         
         </header>
 
-        <section class="secondBody">
+        <section class="secondBodyAboutUs">
             <div>
-                <h2>Lorem Ipsum</h2>
+                <h2>Lola Heffernan</h2>
+                <h3>Team Lead</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src="img/Lola-Heffernan.png">
             </div>
             <div>
-                <h2>Lorem Ipsum</h2>
+                <h2>Jacob Angulo</h2>
+                <h3>Backend Architect</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src="img/Jacob-Angulo.png">
             </div>
             <div>
-                <h2>Lorem Ipsum</h2>
+                <h2>Brandon Allison</h2>
+                <h3>Frontend Architect</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src="img/Brandon-Allison.png">
             </div>
         </section>
     
-        <section class="thirdBody">
+        <section class="thirdBodyAboutUs">
             <div>
-                <h2>Lorem Ipsum</h2>
+                <h2>Jared Parrish</h2>
+                <h3>User Interface Developer</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <img src="img/Jared-Parrish.png">
             </div>
             <div>
-                <h2>Lorem Ipsum</h2>
+                <h2>Jonathan David</h2>
+                <h3>User Interface Developer</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <img src="img/Jonathan-David.png">
             </div>
         </section>
     
@@ -59,13 +86,13 @@
     
     
         <footer>
-            <a>About Us</a>
+            <a href="index.html">Home</a>
             <a>Sign Up</a>
             <a>Lorem Ipsum</a>
         </footer>
     
     </div>
-    
+    <script src="components/carousel/carousel.js"></script>
 </body>
 
 </html>

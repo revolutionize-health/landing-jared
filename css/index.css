@@ -241,6 +241,7 @@ html {
   padding: 1rem 5.5rem 2.5rem 5.5rem;
   width: 40%;
   margin: 0 auto;
+  line-height: 3.2rem;
 }
 @media (max-width: 800px) {
   .indexHeader p {
@@ -272,12 +273,12 @@ html {
   }
 }
 .aboutUsHeader {
-  background-color: white;
+  background-color: #708B9E;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.5% 0 5% 0;
-  color: #062a3a;
+  color: white;
 }
 .aboutUsHeader h1 {
   font-size: 6rem;
@@ -379,19 +380,20 @@ html {
 }
 .secondBodyAboutUs h3 {
   font-size: 2.2rem;
-  padding-bottom: 1.5%;
+  padding-bottom: 2.5%;
 }
 .secondBodyAboutUs p {
   font-size: 1.5rem;
   padding: 2rem, 0rem, 1rem, 0rem;
+  line-height: 2.4rem;
 }
 .secondBodyAboutUs img {
-  width: 10rem;
+  width: 15rem;
   height: auto;
   border-radius: 50%;
   position: relative;
-  left: 40%;
-  padding-top: 0%;
+  left: 30%;
+  margin-top: 5%;
 }
 .thirdBodyIndex {
   display: flex;
@@ -402,8 +404,9 @@ html {
   }
 }
 .thirdBodyIndex h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   padding: 5% 7% 1% 7%;
+  font-weight: bold;
 }
 @media (max-width: 800px) {
   .thirdBodyIndex h2 {
@@ -418,6 +421,7 @@ html {
 .thirdBodyIndex p {
   font-size: 2rem;
   padding: 1% 7% 7% 7%;
+  line-height: 3.2rem;
 }
 @media (max-width: 800px) {
   .thirdBodyIndex p {
@@ -473,6 +477,7 @@ html {
 .thirdBodyAboutUs p {
   font-size: 2rem;
   padding: 1% 7% 7% 7%;
+  line-height: 3.2rem;
 }
 @media (max-width: 800px) {
   .thirdBodyAboutUs p {
@@ -485,12 +490,12 @@ html {
   }
 }
 .thirdBodyAboutUs img {
-  width: 10rem;
+  width: 15rem;
   height: auto;
   border-radius: 50%;
   position: relative;
-  left: 50%;
-  top: 10%;
+  left: 30%;
+  margin-bottom: 10%;
 }
 footer {
   background-color: #062a3a;

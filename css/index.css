@@ -403,6 +403,17 @@ html {
   left: 30%;
   margin-top: 2rem;
 }
+@media (max-width: 800px) {
+  .secondBodyAboutUs img {
+    margin-top: 4rem;
+    left: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .secondBodyAboutUs img {
+    left: 30%;
+  }
+}
 .thirdBodyIndex {
   display: flex;
 }
@@ -455,21 +466,22 @@ html {
 }
 .thirdBodyAboutUs h2 {
   font-size: 3.5rem;
-  font-weight: bold;
+  font-weight: bolder;
   padding: 5% 7% 1% 7%;
 }
 @media (max-width: 800px) {
   .thirdBodyAboutUs h2 {
-    padding: 8% 7% 3% 7%;
+    padding: 8% 7% 0% 7%;
   }
 }
 @media (max-width: 500px) {
   .thirdBodyAboutUs h2 {
-    padding: 10% 10% 5% 10%;
+    padding: 10% 10% 0% 10%;
   }
 }
 .thirdBodyAboutUs h3 {
   font-size: 2.2rem;
+  font-weight: bold;
   padding: 1% 7% 1% 7%;
 }
 @media (max-width: 800px) {
@@ -479,7 +491,7 @@ html {
 }
 @media (max-width: 500px) {
   .thirdBodyAboutUs h3 {
-    padding: 10% 10% 5% 10%;
+    padding: 6% 10% 5% 10%;
   }
 }
 .thirdBodyAboutUs p {

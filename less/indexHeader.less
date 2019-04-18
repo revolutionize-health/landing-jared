@@ -22,7 +22,17 @@
         text-align: center;
         padding: 2rem;
         margin-top: 2rem;
-        font-weight: bold
+        font-weight: bold;
+
+        @media @tablet {
+            font-size: 5.5rem;
+            padding-top: 5rem;
+        }
+        
+        @media @phone {
+            font-size: 4.5rem;
+            padding-top: 5rem;
+        }
     }
 
     p {
@@ -34,11 +44,14 @@
         margin: 0 auto;
 
         @media @tablet {
-            padding:1rem 2.5rem 2.5rem 2.5rem;
+            /* padding:1rem 2.5rem 2.5rem 2.5rem; */
+            width: 100%;
+    
         }
 
         @media @phone {
-            padding:1rem 0.5rem 2.5rem 0.5rem;
+           /*  padding:1rem 0.5rem 2.5rem 0.5rem; */
+           width: 100%
         }
         
     }
@@ -54,10 +67,10 @@
         font-size: 1.75rem;
         cursor: pointer;
         
-
+        
         @media @phone {
             margin: 2rem 30% 1rem 30%;
-            padding: 1.7rem 6rem;
+            padding: 1.5rem 3rem;
         
         }
         

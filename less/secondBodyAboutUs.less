@@ -1,6 +1,7 @@
 .secondBodyAboutUs {
     color: white;
     background-color: @dr-blue;
+    justify-content: space-evenly;
     display: flex;
 
     @media @tablet {
@@ -12,7 +13,18 @@
     }
 
     div {
-        padding: 3rem 4rem;
+        /* padding: 3rem 4rem; */
+        width: 27%;
+        margin: 2rem 4.6%;
+
+        @media @tablet {
+            width: 90%;
+            padding: 1rem 5%;
+        }
+        
+        @media @phone {
+            width: 90%;
+        }
     }
 
 
@@ -21,6 +33,7 @@
         font-size: 3rem;
         padding-bottom: 1rem;
         font-weight: bold;
+        line-height: 3.8rem;
     }
 
     h3 {
@@ -33,6 +46,7 @@
         font-size: 1.5rem;
         padding: 2rem, 0rem, 1rem, 0rem;
         line-height: 2.4rem;
+
     }
 
     img {
@@ -40,7 +54,7 @@
         height: 14.75rem;
         border-radius: 50%;
         position: relative;
-        left: 30%;
+        /* left: 30%; */
         margin-top: 2rem;
 
         @media @tablet {

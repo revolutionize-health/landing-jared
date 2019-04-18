@@ -381,6 +381,7 @@ html {
 .secondBodyAboutUs {
   color: white;
   background-color: #062a3a;
+  justify-content: space-evenly;
   display: flex;
 }
 @media (max-width: 800px) {
@@ -394,13 +395,27 @@ html {
   }
 }
 .secondBodyAboutUs div {
-  padding: 3rem 4rem;
+  /* padding: 3rem 4rem; */
+  width: 27%;
+  margin: 2rem 4.6%;
+}
+@media (max-width: 800px) {
+  .secondBodyAboutUs div {
+    width: 90%;
+    padding: 1rem 5%;
+  }
+}
+@media (max-width: 500px) {
+  .secondBodyAboutUs div {
+    width: 90%;
+  }
 }
 .secondBodyAboutUs h2 {
   color: #AD8E40;
   font-size: 3rem;
   padding-bottom: 1rem;
   font-weight: bold;
+  line-height: 3.8rem;
 }
 .secondBodyAboutUs h3 {
   font-size: 2.2rem;
@@ -416,7 +431,7 @@ html {
   height: 14.75rem;
   border-radius: 50%;
   position: relative;
-  left: 30%;
+  /* left: 30%; */
   margin-top: 2rem;
 }
 @media (max-width: 800px) {
@@ -483,55 +498,59 @@ html {
 .thirdBodyAboutUs h2 {
   font-size: 3.5rem;
   font-weight: bolder;
-  padding: 5% 7% 1% 7%;
+  padding: 2.5rem 7% 1rem 7%;
+  line-height: 4.5rem;
 }
 @media (max-width: 800px) {
   .thirdBodyAboutUs h2 {
-    padding: 8% 7% 0% 7%;
+    padding: 3rem 7% 0 7%;
   }
 }
 @media (max-width: 500px) {
   .thirdBodyAboutUs h2 {
-    padding: 10% 10% 0% 10%;
+    padding: 5rem 10% 0 10%;
   }
 }
 .thirdBodyAboutUs h3 {
   font-size: 2.2rem;
   font-weight: bold;
-  padding: 1% 7% 1% 7%;
+  padding: 1rem 7% 1rem 7%;
 }
 @media (max-width: 800px) {
   .thirdBodyAboutUs h3 {
-    padding: 8% 7% 3% 7%;
+    padding: 3rem 7% 1rem 7%;
   }
 }
 @media (max-width: 500px) {
   .thirdBodyAboutUs h3 {
-    padding: 6% 10% 5% 10%;
+    padding: 2rem 10% 1rem 10%;
   }
 }
 .thirdBodyAboutUs p {
   font-size: 2rem;
-  padding: 1% 7% 3% 7%;
+  padding: 1rem 7% 3rem 7%;
   line-height: 3.2rem;
 }
 @media (max-width: 800px) {
   .thirdBodyAboutUs p {
-    padding: 1% 7% 12% 7%;
+    padding: 0.5rem 7% 1rem 7%;
   }
 }
 @media (max-width: 500px) {
   .thirdBodyAboutUs p {
-    padding: 2% 10% 10% 10%;
+    padding: 0.5rem 10% 5rem 10%;
   }
 }
 .thirdBodyAboutUs img {
   width: 15rem;
-  height: auto;
+  height: 14.75rem;
   border-radius: 50%;
   position: relative;
   left: 30%;
-  margin-bottom: 5%;
+  margin-bottom: 5rem;
+}
+#brandon {
+  margin-top: 4.5rem;
 }
 footer {
   background-color: #062a3a;

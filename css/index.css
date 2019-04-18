@@ -280,6 +280,11 @@ html {
   padding: 0.5% 0 5% 0;
   color: white;
 }
+@media (max-width: 500px) {
+  .aboutUsHeader {
+    padding: 18% 0 5% 0;
+  }
+}
 .aboutUsHeader h1 {
   font-size: 6rem;
   text-align: center;
@@ -345,14 +350,17 @@ html {
 .secondBodyIndex .fa-book-medical {
   font-size: 5rem;
   text-align: center;
+  margin-right: 7%;
 }
 .secondBodyIndex .fa-heartbeat {
   font-size: 5rem;
   text-align: center;
+  margin-right: 7%;
 }
 .secondBodyIndex .fa-hand-holding-usd {
   font-size: 5rem;
   text-align: center;
+  margin-right: 7%;
 }
 .secondBodyAboutUs {
   color: white;
@@ -389,11 +397,11 @@ html {
 }
 .secondBodyAboutUs img {
   width: 15rem;
-  height: auto;
+  height: 14.75rem;
   border-radius: 50%;
   position: relative;
   left: 30%;
-  margin-top: 5%;
+  margin-top: 2rem;
 }
 .thirdBodyIndex {
   display: flex;
@@ -476,7 +484,7 @@ html {
 }
 .thirdBodyAboutUs p {
   font-size: 2rem;
-  padding: 1% 7% 7% 7%;
+  padding: 1% 7% 3% 7%;
   line-height: 3.2rem;
 }
 @media (max-width: 800px) {
@@ -495,7 +503,7 @@ html {
   border-radius: 50%;
   position: relative;
   left: 30%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 footer {
   background-color: #062a3a;
@@ -524,6 +532,18 @@ footer a {
   margin: none;
   box-sizing: border-box;
 }
+@media (max-width: 800px) {
+  .carousel-frame img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-frame img {
+    width: 100%;
+    height: 100%;
+  }
+}
 .carousel-container {
   width: 47rem;
   margin: auto;
@@ -531,15 +551,16 @@ footer a {
   overflow: hidden;
   position: relative;
   background-position-x: 5rem;
+  /*  @media @phone {
+        width: 25rem;
+        
+        
+        
+    } */
 }
 @media (max-width: 800px) {
   .carousel-container {
-    width: 47rem;
-  }
-}
-@media (max-width: 500px) {
-  .carousel-container {
-    width: 44rem;
+    width: 30rem;
   }
 }
 .carousel-frame {

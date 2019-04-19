@@ -5,7 +5,39 @@
         flex-direction: column;
     }
 
+    .containerContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
+        @media @tablet {
+            flex-direction: column;
+        }
+    
+        @media @phone {
+            flex-direction: column;
+        }
+
+    .btmProfileContainer {
+        width: 27%;
+        margin: 2rem 4.6%;
+        min-height: 40rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media @tablet {
+            width: 90%;
+            padding: 1rem 5%;
+        }
+        
+        @media @phone {
+            width: 90%;
+            
+        }
+    
     h2 {
         font-size: 3.5rem;
         font-weight: bolder;
@@ -19,7 +51,6 @@
         @media @phone {
             padding: 5rem 10% 0 10%;
         }
-
     }
 
     h3 {
@@ -34,7 +65,6 @@
         @media @phone {
             padding: 2rem 10% 1rem 10%;
         }
-
     }
 
     p {
@@ -51,17 +81,15 @@
         }
     }
 
-    
     img {
         width: 15rem;
         height: 14.75rem;
         border-radius: 50%;
         position: relative;
-        margin-bottom: 2rem;
-        left: 30%;
-
+        margin: 2rem auto 0;
     }
-    
+}
+}
 }
 
 

@@ -12,10 +12,16 @@
         flex-direction: column;
     }
 
-    div {
+    .profileContainer {
         /* padding: 3rem 4rem; */
         width: 27%;
         margin: 2rem 4.6%;
+        min-height: 40rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
 
         @media @tablet {
             width: 90%;
@@ -53,17 +59,22 @@
         width: 15rem;
         height: 14.75rem;
         border-radius: 50%;
-        position: relative;
+        /* position: relative; */
         /* left: 30%; */
-        margin-top: 2rem;
+        margin: 2rem auto 0;
+        
 
-        @media @tablet {
+        /* @media @tablet {
             margin-top: 4rem;
             left: 40%;
         }
 
         @media @phone {
-            left: 30%;
-        }
+            left: 20%;
+        } */
     }
+}
+
+#brandon {
+    margin-top: 4.5rem;
 }

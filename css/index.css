@@ -394,19 +394,25 @@ html {
     flex-direction: column;
   }
 }
-.secondBodyAboutUs div {
+.secondBodyAboutUs .profileContainer {
   /* padding: 3rem 4rem; */
   width: 27%;
   margin: 2rem 4.6%;
+  min-height: 40rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 @media (max-width: 800px) {
-  .secondBodyAboutUs div {
+  .secondBodyAboutUs .profileContainer {
     width: 90%;
     padding: 1rem 5%;
   }
 }
 @media (max-width: 500px) {
-  .secondBodyAboutUs div {
+  .secondBodyAboutUs .profileContainer {
     width: 90%;
   }
 }
@@ -430,20 +436,20 @@ html {
   width: 15rem;
   height: 14.75rem;
   border-radius: 50%;
-  position: relative;
+  /* position: relative; */
   /* left: 30%; */
-  margin-top: 2rem;
+  margin: 2rem auto 0;
+  /* @media @tablet {
+            margin-top: 4rem;
+            left: 40%;
+        }
+
+        @media @phone {
+            left: 20%;
+        } */
 }
-@media (max-width: 800px) {
-  .secondBodyAboutUs img {
-    margin-top: 4rem;
-    left: 40%;
-  }
-}
-@media (max-width: 500px) {
-  .secondBodyAboutUs img {
-    left: 30%;
-  }
+#brandon {
+  margin-top: 4.5rem;
 }
 .thirdBodyIndex {
   display: flex;
@@ -546,11 +552,8 @@ html {
   height: 14.75rem;
   border-radius: 50%;
   position: relative;
+  margin-bottom: 2rem;
   left: 30%;
-  margin-bottom: 5rem;
-}
-#brandon {
-  margin-top: 4.5rem;
 }
 footer {
   background-color: #062a3a;

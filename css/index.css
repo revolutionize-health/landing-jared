@@ -353,7 +353,6 @@ html {
 }
 .secondBodyIndex h2 {
   font-size: 4rem;
-  /* padding-bottom: 1rem; */
   color: #AD8E40;
   font-weight: bold;
   text-align: left;
@@ -436,17 +435,8 @@ html {
   width: 15rem;
   height: 14.75rem;
   border-radius: 50%;
-  /* position: relative; */
-  /* left: 30%; */
+  position: relative;
   margin: 2rem auto 0;
-  /* @media @tablet {
-            margin-top: 4rem;
-            left: 40%;
-        }
-
-        @media @phone {
-            left: 20%;
-        } */
 }
 #brandon {
   margin-top: 4.5rem;
@@ -501,59 +491,94 @@ html {
     flex-direction: column;
   }
 }
-.thirdBodyAboutUs h2 {
+.thirdBodyAboutUs .containerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .thirdBodyAboutUs .containerContainer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .thirdBodyAboutUs .containerContainer {
+    flex-direction: column;
+  }
+}
+.thirdBodyAboutUs .containerContainer .btmProfileContainer {
+  width: 27%;
+  margin: 2rem 4.6%;
+  min-height: 40rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 800px) {
+  .thirdBodyAboutUs .containerContainer .btmProfileContainer {
+    width: 90%;
+    padding: 1rem 5%;
+  }
+}
+@media (max-width: 500px) {
+  .thirdBodyAboutUs .containerContainer .btmProfileContainer {
+    width: 90%;
+  }
+}
+.thirdBodyAboutUs .containerContainer .btmProfileContainer h2 {
   font-size: 3.5rem;
   font-weight: bolder;
   padding: 2.5rem 7% 1rem 7%;
   line-height: 4.5rem;
 }
 @media (max-width: 800px) {
-  .thirdBodyAboutUs h2 {
+  .thirdBodyAboutUs .containerContainer .btmProfileContainer h2 {
     padding: 3rem 7% 0 7%;
   }
 }
 @media (max-width: 500px) {
-  .thirdBodyAboutUs h2 {
+  .thirdBodyAboutUs .containerContainer .btmProfileContainer h2 {
     padding: 5rem 10% 0 10%;
   }
 }
-.thirdBodyAboutUs h3 {
+.thirdBodyAboutUs .containerContainer .btmProfileContainer h3 {
   font-size: 2.2rem;
   font-weight: bold;
   padding: 1rem 7% 1rem 7%;
 }
 @media (max-width: 800px) {
-  .thirdBodyAboutUs h3 {
+  .thirdBodyAboutUs .containerContainer .btmProfileContainer h3 {
     padding: 3rem 7% 1rem 7%;
   }
 }
 @media (max-width: 500px) {
-  .thirdBodyAboutUs h3 {
+  .thirdBodyAboutUs .containerContainer .btmProfileContainer h3 {
     padding: 2rem 10% 1rem 10%;
   }
 }
-.thirdBodyAboutUs p {
+.thirdBodyAboutUs .containerContainer .btmProfileContainer p {
   font-size: 2rem;
   padding: 1rem 7% 3rem 7%;
   line-height: 3.2rem;
 }
 @media (max-width: 800px) {
-  .thirdBodyAboutUs p {
+  .thirdBodyAboutUs .containerContainer .btmProfileContainer p {
     padding: 0.5rem 7% 1rem 7%;
   }
 }
 @media (max-width: 500px) {
-  .thirdBodyAboutUs p {
+  .thirdBodyAboutUs .containerContainer .btmProfileContainer p {
     padding: 0.5rem 10% 5rem 10%;
   }
 }
-.thirdBodyAboutUs img {
+.thirdBodyAboutUs .containerContainer .btmProfileContainer img {
   width: 15rem;
   height: 14.75rem;
   border-radius: 50%;
   position: relative;
-  margin-bottom: 2rem;
-  left: 30%;
+  margin: 2rem auto 0;
 }
 footer {
   background-color: #062a3a;
@@ -606,12 +631,6 @@ footer a:hover {
   overflow: hidden;
   position: relative;
   background-position-x: 5rem;
-  /*  @media @phone {
-        width: 25rem;
-        
-        
-        
-    } */
 }
 @media (max-width: 800px) {
   .carousel-container {

@@ -160,24 +160,25 @@ html {
 }
 .menu-holder .burger-button {
   border: 0.2rem solid #062a3a;
+  border-radius: 10%;
   background-color: #062a3a;
   color: #AD8E40;
   font-size: 3.2rem;
   font-weight: bold;
   padding: 1rem;
   top: 4rem;
-  position: fixed;
+  position: absolute;
 }
 .menu-holder .menu-content {
   width: 15rem;
-  position: fixed;
+  position: absolute;
   background-color: #062a3a;
   display: flex;
   flex-direction: column;
   align-items: center;
   top: 8.5rem;
   border: 2rem, solid white;
-  border-radius: 2%;
+  border-radius: 0% 5% 5% 5%;
   animation: fadein 0.5s;
 }
 .menu-holder .menu-link {
@@ -198,6 +199,14 @@ html {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 .indexHeader {
@@ -222,6 +231,18 @@ html {
   margin-top: 2rem;
   font-weight: bold;
 }
+@media (max-width: 800px) {
+  .indexHeader h1 {
+    font-size: 5.5rem;
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .indexHeader h1 {
+    font-size: 4.5rem;
+    padding-top: 5rem;
+  }
+}
 .indexHeader p {
   font-size: 2rem;
   padding: 2rem;
@@ -229,15 +250,18 @@ html {
   padding: 1rem 5.5rem 2.5rem 5.5rem;
   width: 40%;
   margin: 0 auto;
+  line-height: 3.2rem;
 }
 @media (max-width: 800px) {
   .indexHeader p {
-    padding: 1rem 2.5rem 2.5rem 2.5rem;
+    /* padding:1rem 2.5rem 2.5rem 2.5rem; */
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
   .indexHeader p {
-    padding: 1rem 0.5rem 2.5rem 0.5rem;
+    /*  padding:1rem 0.5rem 2.5rem 0.5rem; */
+    width: 100%;
   }
 }
 .indexHeader button {
@@ -250,20 +274,31 @@ html {
   font-weight: bolder;
   font-size: 1.75rem;
   cursor: pointer;
+  transition: background-color 0.5s;
+}
+.indexHeader button:hover {
+  background-color: white;
+  color: #062a3a;
+  transition: background-color 0.5s;
 }
 @media (max-width: 500px) {
   .indexHeader button {
     margin: 2rem 30% 1rem 30%;
-    padding: 1.7rem 6rem;
+    padding: 1.5rem 3rem;
   }
 }
 .aboutUsHeader {
-  background-color: white;
+  background-color: #708B9E;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.5% 0 5% 0;
-  color: #062a3a;
+  color: white;
+}
+@media (max-width: 500px) {
+  .aboutUsHeader {
+    padding: 18% 0 5% 0;
+  }
 }
 .aboutUsHeader h1 {
   font-size: 6rem;
@@ -313,6 +348,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  align-items: flex-end;
   padding: 2.5rem 0rem;
 }
 .secondBodyIndex h2 {
@@ -325,22 +361,27 @@ html {
 .secondBodyIndex p {
   font-size: 1.5rem;
   padding: 2rem, 0rem, 1rem, 0rem;
+  line-height: 2.4rem;
 }
 .secondBodyIndex .fa-book-medical {
   font-size: 5rem;
   text-align: center;
+  margin-right: 7%;
 }
 .secondBodyIndex .fa-heartbeat {
   font-size: 5rem;
   text-align: center;
+  margin-right: 7%;
 }
 .secondBodyIndex .fa-hand-holding-usd {
   font-size: 5rem;
   text-align: center;
+  margin-right: 7%;
 }
 .secondBodyAboutUs {
   color: white;
   background-color: #062a3a;
+  justify-content: space-evenly;
   display: flex;
 }
 @media (max-width: 800px) {
@@ -353,30 +394,62 @@ html {
     flex-direction: column;
   }
 }
-.secondBodyAboutUs div {
-  padding: 3rem 4rem;
+.secondBodyAboutUs .profileContainer {
+  /* padding: 3rem 4rem; */
+  width: 27%;
+  margin: 2rem 4.6%;
+  min-height: 40rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 800px) {
+  .secondBodyAboutUs .profileContainer {
+    width: 90%;
+    padding: 1rem 5%;
+  }
+}
+@media (max-width: 500px) {
+  .secondBodyAboutUs .profileContainer {
+    width: 90%;
+  }
 }
 .secondBodyAboutUs h2 {
   color: #AD8E40;
   font-size: 3rem;
   padding-bottom: 1rem;
   font-weight: bold;
+  line-height: 3.8rem;
 }
 .secondBodyAboutUs h3 {
   font-size: 2.2rem;
-  padding-bottom: 1.5%;
+  padding-bottom: 2.5%;
 }
 .secondBodyAboutUs p {
   font-size: 1.5rem;
   padding: 2rem, 0rem, 1rem, 0rem;
+  line-height: 2.4rem;
 }
 .secondBodyAboutUs img {
-  width: 10rem;
-  height: auto;
+  width: 15rem;
+  height: 14.75rem;
   border-radius: 50%;
-  position: relative;
-  left: 40%;
-  padding-top: 0%;
+  /* position: relative; */
+  /* left: 30%; */
+  margin: 2rem auto 0;
+  /* @media @tablet {
+            margin-top: 4rem;
+            left: 40%;
+        }
+
+        @media @phone {
+            left: 20%;
+        } */
+}
+#brandon {
+  margin-top: 4.5rem;
 }
 .thirdBodyIndex {
   display: flex;
@@ -387,8 +460,9 @@ html {
   }
 }
 .thirdBodyIndex h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   padding: 5% 7% 1% 7%;
+  font-weight: bold;
 }
 @media (max-width: 800px) {
   .thirdBodyIndex h2 {
@@ -403,6 +477,7 @@ html {
 .thirdBodyIndex p {
   font-size: 2rem;
   padding: 1% 7% 7% 7%;
+  line-height: 3.2rem;
 }
 @media (max-width: 800px) {
   .thirdBodyIndex p {
@@ -428,54 +503,57 @@ html {
 }
 .thirdBodyAboutUs h2 {
   font-size: 3.5rem;
-  font-weight: bold;
-  padding: 5% 7% 1% 7%;
+  font-weight: bolder;
+  padding: 2.5rem 7% 1rem 7%;
+  line-height: 4.5rem;
 }
 @media (max-width: 800px) {
   .thirdBodyAboutUs h2 {
-    padding: 8% 7% 3% 7%;
+    padding: 3rem 7% 0 7%;
   }
 }
 @media (max-width: 500px) {
   .thirdBodyAboutUs h2 {
-    padding: 10% 10% 5% 10%;
+    padding: 5rem 10% 0 10%;
   }
 }
 .thirdBodyAboutUs h3 {
   font-size: 2.2rem;
-  padding: 1% 7% 1% 7%;
+  font-weight: bold;
+  padding: 1rem 7% 1rem 7%;
 }
 @media (max-width: 800px) {
   .thirdBodyAboutUs h3 {
-    padding: 8% 7% 3% 7%;
+    padding: 3rem 7% 1rem 7%;
   }
 }
 @media (max-width: 500px) {
   .thirdBodyAboutUs h3 {
-    padding: 10% 10% 5% 10%;
+    padding: 2rem 10% 1rem 10%;
   }
 }
 .thirdBodyAboutUs p {
   font-size: 2rem;
-  padding: 1% 7% 7% 7%;
+  padding: 1rem 7% 3rem 7%;
+  line-height: 3.2rem;
 }
 @media (max-width: 800px) {
   .thirdBodyAboutUs p {
-    padding: 1% 7% 12% 7%;
+    padding: 0.5rem 7% 1rem 7%;
   }
 }
 @media (max-width: 500px) {
   .thirdBodyAboutUs p {
-    padding: 2% 10% 10% 10%;
+    padding: 0.5rem 10% 5rem 10%;
   }
 }
 .thirdBodyAboutUs img {
-  width: 10rem;
-  height: auto;
+  width: 15rem;
+  height: 14.75rem;
   border-radius: 50%;
   position: relative;
-  left: 50%;
-  top: 10%;
+  margin-bottom: 2rem;
+  left: 30%;
 }
 footer {
   background-color: #062a3a;
@@ -498,11 +576,28 @@ footer a {
   color: #AD8E40;
   width: auto;
   text-decoration: none;
+  transition: color 0.5s;
+}
+footer a:hover {
+  color: white;
+  transition: color 0.5s;
 }
 .carousel-frame img {
   padding: none;
   margin: none;
   box-sizing: border-box;
+}
+@media (max-width: 800px) {
+  .carousel-frame img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-frame img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .carousel-container {
   width: 47rem;
@@ -511,21 +606,22 @@ footer a {
   overflow: hidden;
   position: relative;
   background-position-x: 5rem;
+  /*  @media @phone {
+        width: 25rem;
+        
+        
+        
+    } */
 }
 @media (max-width: 800px) {
   .carousel-container {
-    width: 47rem;
-  }
-}
-@media (max-width: 500px) {
-  .carousel-container {
-    width: 44rem;
+    width: 30rem;
   }
 }
 .carousel-frame {
   display: flex;
   width: 100%;
-  /* height?????????????????????? */
+  height: auto;
 }
 #prevBtn {
   position: absolute;

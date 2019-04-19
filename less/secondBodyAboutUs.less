@@ -1,6 +1,7 @@
 .secondBodyAboutUs {
     color: white;
     background-color: @dr-blue;
+    justify-content: space-evenly;
     display: flex;
 
     @media @tablet {
@@ -11,8 +12,25 @@
         flex-direction: column;
     }
 
-    div {
-        padding: 3rem 4rem;
+    .profileContainer {
+        /* padding: 3rem 4rem; */
+        width: 27%;
+        margin: 2rem 4.6%;
+        min-height: 40rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media @tablet {
+            width: 90%;
+            padding: 1rem 5%;
+        }
+        
+        @media @phone {
+            width: 90%;
+        }
     }
 
 
@@ -21,25 +39,42 @@
         font-size: 3rem;
         padding-bottom: 1rem;
         font-weight: bold;
+        line-height: 3.8rem;
     }
 
     h3 {
         font-size: 2.2rem;
-        padding-bottom: 1.5%;
+        padding-bottom: 2.5%;
        
     }
 
     p {
         font-size: 1.5rem;
         padding: 2rem, 0rem, 1rem, 0rem;
+        line-height: 2.4rem;
+
     }
 
     img {
-        width: 10rem;
-        height: auto;
+        width: 15rem;
+        height: 14.75rem;
         border-radius: 50%;
-        position: relative;
-        left: 40%;
-        padding-top: 0%;
+        /* position: relative; */
+        /* left: 30%; */
+        margin: 2rem auto 0;
+        
+
+        /* @media @tablet {
+            margin-top: 4rem;
+            left: 40%;
+        }
+
+        @media @phone {
+            left: 20%;
+        } */
     }
+}
+
+#brandon {
+    margin-top: 4.5rem;
 }

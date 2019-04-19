@@ -12,9 +12,6 @@
         background-position: 40% 60%;
     }
     
-
-    
-    
     
     h1 {
         
@@ -22,7 +19,17 @@
         text-align: center;
         padding: 2rem;
         margin-top: 2rem;
-        font-weight: bold
+        font-weight: bold;
+
+        @media @tablet {
+            font-size: 5.5rem;
+            padding-top: 5rem;
+        }
+        
+        @media @phone {
+            font-size: 4.5rem;
+            padding-top: 5rem;
+        }
     }
 
     p {
@@ -32,13 +39,17 @@
         padding:1rem 5.5rem 2.5rem 5.5rem;
         width: 40%;
         margin: 0 auto;
+        line-height: 3.2rem;
 
         @media @tablet {
-            padding:1rem 2.5rem 2.5rem 2.5rem;
+            /* padding:1rem 2.5rem 2.5rem 2.5rem; */
+            width: 100%;
+    
         }
 
         @media @phone {
-            padding:1rem 0.5rem 2.5rem 0.5rem;
+           /*  padding:1rem 0.5rem 2.5rem 0.5rem; */
+           width: 100%
         }
         
     }
@@ -53,11 +64,18 @@
         font-weight: bolder;
         font-size: 1.75rem;
         cursor: pointer;
-        
+        transition: background-color .5s;
 
+        &:hover {
+            background-color: white;
+            color: @dr-blue;
+            transition: background-color .5s;
+        }
+        
+        
         @media @phone {
             margin: 2rem 30% 1rem 30%;
-            padding: 1.7rem 6rem;
+            padding: 1.5rem 3rem;
         
         }
         

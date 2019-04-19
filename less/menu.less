@@ -10,27 +10,28 @@
   .burger-button {
    
     border: .2rem solid @dr-blue;
+    border-radius: 10%;
     background-color: @dr-blue;
     color: @dr-secondary;
     font-size: 3.2rem;
     font-weight: bold;
     padding: 1rem;
     top: 4rem;
-    position: fixed; 
+    position: absolute; 
+
     
   }
   .menu-content {
     width: 15rem;
-    position: fixed;
+    position: absolute;
     background-color: @dr-blue;
     display: flex;
     flex-direction: column;
     align-items: center;  
     top: 8.5rem;
     border: 2rem, solid white;
-    border-radius: 2%;
+    border-radius: 0% 5% 5% 5%;
     animation: fadein .5s;
-    
     
   }
   .menu-link {
@@ -45,6 +46,7 @@
   .menu-hidden {
     display: none;
    
+   
 }
 
 }
@@ -53,3 +55,9 @@
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
